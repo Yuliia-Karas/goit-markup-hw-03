@@ -64,7 +64,8 @@ background-color: var(--color-white);
     border-color: var(--color-accent);
     border: 1px solid var(--color-accent);
     border-radius: 4px;
-   }
+    padding: 4px 8px;
+    }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -117,11 +118,11 @@ border-radius: 4px;
 }
 
 .container {
-    width: 1152px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -170,8 +171,11 @@ border-radius: 4px;
     line-height: 1.33;
     letter-spacing: 0.03em ;
     text-transform: uppercase;
-    color: var(--color-primary-brand);
-    margin-right: 77px;
+    color: var(--color-primary-brand); 
+}
+
+.logo-header {
+margin-right: 77px;
 }
 
 .logo-dark {
@@ -203,7 +207,7 @@ border-radius: 4px;
 }
 
 .contact-mail {
-padding-right: 40px;
+margin-right: 40px;
 }
 /* 
 .contact-phone-number {
@@ -227,18 +231,15 @@ padding-right: 40px;
 .hero {
     text-align: center;
     padding-top: 192px;
-    padding-bottom: 291px;
+    padding-bottom: 192px;
+    background-color: var(--color-dark);
 }
 
 .big-container {
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--color-dark);
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
     }
+
 .hero-title {
     font-weight: 500;
     font-size: 56px;
@@ -247,7 +248,6 @@ padding-right: 40px;
     text-align: center;
     color: var(--color-white);
     width: 492px;
-    
     }
 
 .modal-btn {
@@ -261,17 +261,16 @@ padding-right: 40px;
     background-color: var(--color-primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 0px;
     margin-top: 48px;
     width: 170px;
     height: 51px;
   }
     
-.modal-btn:hover,
-.modal-btn:focus,
 .modal-btn:active {
     background-color: var(--color-btn-bgrnd-active);
-    /* cursor: pointer; */
-}
+    
+    }
 /* ==============< /!--Hero-->================= */
 /*#endregion*/
 
@@ -286,10 +285,16 @@ padding-right: 40px;
     justify-content: space-between;
 }
 
+
+
+.studio-features-item {
+    flex-basis: calc((100%-72px)/4);
+ 
+}
+
 .studio-features-item:not(:last-child) {
     margin-right: 24px;
 }
-
 /* ==================  /Особливості студії  ================== */
 
 /* ==================  What are we doing ================== */
@@ -306,6 +311,7 @@ padding-bottom: 120px;
 /* ==================  Our Team ================== */
 .team {
     background-color: var(--color-light);
+    padding-top: 120px;
     padding-bottom: 120px;
     }
 
@@ -332,11 +338,11 @@ padding-bottom: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 96px;
+    padding-top: 96px;
 }
 
 .portfolio-item:not(:last-child) {
-    margin-right: 24px;
+    padding-right: 24px;
 }
 
 .portfolio-container {
@@ -352,7 +358,8 @@ padding-top: 32px;
 padding-bottom: 32px;
 padding-left: 16px;
 padding-right: 16px;
-border: 0.5px solid #F4F4FD;
+border: 0.5px solid var(--color-light);
+border-top: 0px;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* ==================  /Portfolio ================== */
